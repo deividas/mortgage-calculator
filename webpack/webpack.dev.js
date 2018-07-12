@@ -23,4 +23,4 @@ module.exports = {
     devServer: {
         contentBase: srcPath
     }
-}
+};
