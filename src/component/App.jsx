@@ -1,7 +1,11 @@
 import React from 'react';
 
+import Menu from './base/Menu';
+
 const App = () => (
-    <h1>Būsto paskolos skaičiuoklė</h1>
+    <div>
+        <Menu />
+    </div>
 );
 
 export default App;

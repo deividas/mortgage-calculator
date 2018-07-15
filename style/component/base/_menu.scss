@@ -1,0 +1,18 @@
+@import '../../theme';
+
+#menu {
+    display: flex;
+    align-items: center;
+
+    height: 2.5em;
+    padding: $spacing $spacing * 10;
+
+    background-color: $primary-color;
+}
+
+#menu-title {
+    flex-grow: 1;
+
+    color: $text-color;
+    font-family: 'Roboto';
+}
