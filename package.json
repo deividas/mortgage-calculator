@@ -9,8 +9,12 @@
 		"dev": "node_modules/.bin/webpack-dev-server --hot --config webpack/webpack.dev.js"
 	},
 	"dependencies": {
+		"css-loader": "^1.0.0",
+		"node-sass": "^4.9.2",
 		"react": "^16.4.1",
-		"react-dom": "^16.4.1"
+		"react-dom": "^16.4.1",
+		"sass-loader": "^7.0.3",
+		"style-loader": "^0.21.0"
 	},
 	"devDependencies": {
 		"babel-core": "^6.26.3",
