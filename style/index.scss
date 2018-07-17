@@ -1,8 +1,15 @@
+@import 'theme';
 @import 'component/base/menu';
 @import 'component/icon/icon-link';
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+* {
+    color: $text-color;
+    font-family: $font;
+}
 
 body {
+    background-color: $background-color;
     margin: 0;
 }

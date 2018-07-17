@@ -1,26 +1,29 @@
+@import '../../theme';
+
 $size: 3em;
 $hover-size: 1.5em;
+$hover-color: #000;
 $icon-size: $size - $hover-size;
 
 .icon-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex;
+    @include align-items(center);
+    @include justify-content(center);
 
     height: $size;
     width: $size;
 
     border-radius: 50%;
     background-color: transparent;
-    transition: background-color .5s linear;
+    @include transition(background-color .5s linear);
 
     &:hover {
-        background-color: rgba($shadow-color, .3);
+        background-color: rgba($hover-color, .3);
     }
 
     svg {
+        fill: white;
         height: $icon-size;
         width: $icon-size;
-        fill: white;
     }
 }

@@ -1,18 +1,18 @@
 @import '../../theme';
 
+$padding: $spacing $spacing * 10;
+
 #menu {
-    display: flex;
-    align-items: center;
+    @include flex;
+    @include align-items(center);
 
     height: 2.5em;
-    padding: $spacing $spacing * 10;
+    padding: $padding;
 
-    background-color: $primary-color;
+    @include shadow;
+    background-color: $dark-primary-color;
 }
 
 #menu-title {
     flex-grow: 1;
-
-    color: $text-color;
-    font-family: 'Roboto';
 }
