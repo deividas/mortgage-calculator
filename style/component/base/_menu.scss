@@ -3,8 +3,8 @@
 $padding: $spacing $spacing * 10;
 
 #menu {
-    @include flex;
-    @include align-items(center);
+    display: flex;
+    align-items: center;
 
     height: 2.5em;
     padding: $padding;

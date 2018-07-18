@@ -9,8 +9,10 @@
 		"dev": "node_modules/.bin/webpack-dev-server --hot --config webpack/webpack.dev.js"
 	},
 	"dependencies": {
+		"autoprefixer": "^9.0.0",
 		"css-loader": "^1.0.0",
 		"node-sass": "^4.9.2",
+		"postcss-loader": "^2.1.6",
 		"prop-types": "^15.6.2",
 		"react": "^16.4.1",
 		"react-dom": "^16.4.1",

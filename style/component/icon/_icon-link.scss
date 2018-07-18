@@ -6,16 +6,16 @@ $hover-color: #000;
 $icon-size: $size - $hover-size;
 
 .icon-link {
-    @include flex;
-    @include align-items(center);
-    @include justify-content(center);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     height: $size;
     width: $size;
 
     border-radius: 50%;
     background-color: transparent;
-    @include transition(background-color .5s linear);
+    transition: background-color .5s linear;
 
     &:hover {
         background-color: rgba($hover-color, .3);

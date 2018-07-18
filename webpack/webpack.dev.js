@@ -1,4 +1,5 @@
 const path = require('path');
+const autoprefixer = require('autoprefixer');
 
 const srcPath = path.join(__dirname, '../src');
 
@@ -19,6 +20,12 @@ module.exports = {
                 loader: [
                     'style-loader',
                     'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: () => [autoprefixer]
+                        }
+                    },
                     'sass-loader'
                 ]
             }

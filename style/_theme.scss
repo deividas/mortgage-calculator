@@ -1,7 +1,6 @@
-@import './mixins';
-
-$spacing: 0.7em;
 $font: 'Roboto';
+$spacing: 0.7em;
+
 $text-color: #FFF;
 $shadow-color: #455A64;
 
@@ -12,9 +11,7 @@ $light-primary-color: #CFD8DC;
 $background-color: $light-primary-color;
 
 @mixin shadow {
-    @include box-shadow(
-        0 3px 0px rgba($shadow-color, .25),
+    box-shadow: 0 3px 0px rgba($shadow-color, .25),
         4px 0 4px 0 rgba($shadow-color, .10),
-        -4px 0 4px 0 rgba($shadow-color, .10)
-    );
+        -4px 0 4px 0 rgba($shadow-color, .10);
 }
